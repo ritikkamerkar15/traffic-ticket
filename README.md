@@ -60,11 +60,6 @@ We welcome contributions to make this project even better! If you'd like to cont
 
 ---
 
-## 📧 Contact
-
-Feel free to reach out for any inquiries or feedback:  
-📩 Email: your-email@example.com  
-🌐 GitHub: [Shubhajiit](https://github.com/Shubhajiit)
 
 ---
 
