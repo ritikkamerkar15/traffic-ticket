@@ -1,15 +1,13 @@
 import React from 'react'
-import { Routes, Route } from 'react-router-dom'
+import { Routes, Route, Navigate } from 'react-router-dom'
+import Login from './pages/Login'
 
 function App() {
   return (
     <div className="min-h-screen bg-gray-50">
       <Routes>
-        <Route path="/" element={
-          <div className="p-4">
-            <h1 className="text-2xl font-bold">Welcome</h1>
-          </div>
-        } />
+        <Route path="/login" element={<Login />} />
+        <Route path="/" element={<Navigate to="/login" replace />} />
       </Routes>
     </div>
   )
