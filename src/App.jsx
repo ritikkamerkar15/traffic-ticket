@@ -1,15 +1,17 @@
 import React from 'react'
-import { Routes, Route, Navigate } from 'react-router-dom'
-import Login from './pages/Login'
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
+import LoginForm from './components/auth/LoginForm'
 
 function App() {
   return (
-    <div className="min-h-screen bg-gray-50">
-      <Routes>
-        <Route path="/login" element={<Login />} />
-        <Route path="/" element={<Navigate to="/login" replace />} />
-      </Routes>
-    </div>
+    <Router>
+      <div>
+        <Routes>
+          <Route path="/login" element={<LoginForm />} />
+          <Route path="/dashboard" element={<div>Dashboard</div>} />
+        </Routes>
+      </div>
+    </Router>
   )
 }
 
